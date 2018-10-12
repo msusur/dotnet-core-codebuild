@@ -13,5 +13,4 @@ phases:
       - dotnet restore
       - dotnet publish
 artifacts:
-  files:
-    - bin/Debug/netcoreapp2.0/publish/**
+  base-directory: bin/Debug/netcoreapp2.0/publish
