@@ -1,7 +1,7 @@
 version: 0.2
 
 phases:
-  pre_build:
+  install:
     commands:
       - apt-get update && apt-get install curl -y
       - curl -SL "https://nodejs.org/dist/v8.11.1/node-v8.11.1-linux-x64.tar.gz" --output nodejs.tar.gz
@@ -14,4 +14,4 @@ phases:
       - dotnet publish
 artifacts:
   files:
-    - bin/Debug/netcoreapp2.0/*
+    - bin/Debug/netcoreapp2.0/publish/**
